@@ -7,11 +7,11 @@
 
     @font-face {
         font-family: 'salim';
-        src: url("/font/Sallim.ttf");
+                src: url("../font/Bigilla.otf") format("otf");
     }
     @font-face {
         font-family: 'bigilla';
-        src: url("/font/Bigilla.otf");
+        src: url("../font/Bigilla.otf") format(""bigilla);
     }
     .nav-title{
         font-family: 'salim',sans-serif;
