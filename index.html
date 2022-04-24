@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title" > harii</title>
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body> 
+    <div class="cursor"></div>
+    <div data-scroll-container>
+   
+    <div  class="hero">
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title event">hari</div>
+        </div>
+        <div class="nav-btn"> 
+          <label for="nav-check">
+            <span></span>
+            <span class="length"></span>
+            <span></span>
+          </label>
+        </div>
+ 
+
+        <div class="nav-links" >
+          <a href="#home" class="nav-link" data-scroll-to >HOME</a>
+          <a href="#about" class="nav-link"data-scroll-to >ABOUT</a>
+          <a href="#work" class="nav-link" data-scroll-to >WORKS</a>
+        <a href="#contact"class="nav-link" data-scroll-to>CONTACT</a>
+        </div>
+      </div>
+      <!-- NAVBAR FINISHED -->
+
+      <div id="home" class="main-wrapper" data-scroll>
+        <h1 class="main">Hariprasad</h1>
+        <p class="para">{ Front-End Developer }</p>
+      </div>
+
+      <div data-scroll class="image" >
+        <img  id="img-hide" src="./assets/image/sculpt.svg" alt="" />
+      </div>
+
+      <div class="middle">
+        <div class="mouse"></div>
+      </div>
+    </div>
+
+    <!-- HERO SECTION FINISHES HERE   -->
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <div id="about" class="wrapper" data-scroll>
+        <h1 class="about-head">About</h1>
+        <p class="about-me">
+          Hi there im Hariprasad . A passionate self-taught Front-End Developer and security
+          researcher based in india .Currently doing BCA
+        </p>
+        <button class="get-in">Join us</button>
+       
+        
+      </div>
+    </section>
+    <!-- ABOUT SECTION ENDS HERE -->
+    <!-- WORKS SECTION STRATS HERE -->
+    <section class="works" data-scroll>
+      <h1 id="work" class="work-head">WORKS</h1>
+      <div class="work_cards">
+        <div class="card_1">
+          <img id="c1" src="./assets/image/wpjpg.jpg" alt="" />
+        </div>
+        <div class="card_1">
+          <img id="c2" src="./assets/image/wpjpg.jpg" alt="" />
+        </div>
+        <div class="card_1">
+          <img id="c3" src="./assets/image/wpjpg.jpg" alt="" />
+        </div>
+         <div class="more">
+           <a href="#" id="more">view more</a> 
+         </div>
+      </div>
+     
+    </section> 
+    <section class="contact" >
+         <div class="contact-wrapper" id="contact">
+          <h1  class="cntct-head">REACH OUT</h1>
+        
+          <form id="form" class="topBefore">
+		
+            <input id="name" type="text" placeholder="NAME">
+            <input id="email" type="text" placeholder="E-MAIL">
+            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+        <input id="submit" type="submit" value="GO!">
+        
+      </form>
+    
+         </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="rw1">
+        <ul class="icons">
+          <li class="icon"><ion-icon name="logo-facebook"></ion-icon></li>
+          <li class="icon"><ion-icon name="logo-instagram"></ion-icon></li>
+          <li class="icon"><ion-icon name="logo-github"></ion-icon></li>
+          <li class="icon"><ion-icon name="logo-twitter"></ion-icon></li>
+        </ul>
+      </div>
+      <div class="rw2">
+        <p class="footer-text">Made with ❤ by me</p>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline();
+
+      tl.from(".nav-title", { duration: 2, opacity: 0, y: -10 });
+      tl.from(".image", { duration: 2, opacity: 0, y: -100 });
+      tl.from(".main", { duration: 2, opacity: 0, y: -40, ease: "power4.out" });
+      tl.from(".para", { duration: 2, opacity: 0, ease: "back" });
+      tl.from(".middle", { duration: 2, opacity: 0 });
+
+      //  ABOUT
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+       /* FONTS */
+
+/* Poopins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+
+    @font-face {
+        font-family: 'salim';
+        src: url("/font/Sallim.ttf");
+    }
+    @font-face {
+        font-family: 'bigilla';
+        src: url("/font/Bigilla.otf");
+    }
+    .nav-title{
+        font-family: 'salim',sans-serif;
+    }
+    .nav-links{
+        font-family: 'bigilla', sans-serif;
+    }
+
+
+
+    
+    
