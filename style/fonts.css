@@ -7,7 +7,10 @@
 
     @font-face {
         font-family: 'salim';
-                src: url("../font/Bigilla.otf") format("otf");
+        src: url("../font/Sallim.ttf") format("otf");
+        src: local('salim'),
+        url('../font/Sallim.ttf') format('opentype'),
+        url('../font/Sallim.ttf') format('svg');
     }
     @font-face {
         font-family: 'bigilla';
