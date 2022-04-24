@@ -139,7 +139,7 @@ body {
   z-index: 4;
 }
 .main {
-  font-family: "bigilla", sans-serif;
+  font-family: "Times New Roman";
   font-style: normal;
   font-weight: 400;
   font-size: 49px;
@@ -147,7 +147,7 @@ body {
   color: white;
 }
 .para {
-  font-family: "bigilla", sans-serif;
+ font-family: "Times New Roman";
   color: #fff;
   font-size: 23px;
 }
