@@ -11,7 +11,7 @@
     }
     @font-face {
         font-family: 'bigilla';
-        src: url("../font/Bigilla.otf") format(""bigilla);
+        src: url("../font/Bigilla.otf") format("otf");
     }
     .nav-title{
         font-family: 'salim',sans-serif;
